@@ -13,11 +13,11 @@ def main():
     max_vals = []
     for i in xrange(num_sims):
         #max_vals.append(strategy_1(N))
-        #max_vals.append(strategy_2(N))
+        max_vals.append(strategy_2(N))
         #max_vals.append(strategy_3(N))
-        max_vals.append(strategy_4(N))
+        #max_vals.append(strategy_4(N))
     print max_vals
-    plt.hist(max_vals, bins=5, range=(1.5, 6.5))
+    plt.hist(max_vals, bins=11, range=(0.5, 11.5))
     plt.show()
 
 # Select one of the N bins uniformly at random, and place the current ball in it.
