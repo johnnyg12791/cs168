@@ -31,7 +31,7 @@ def part3():
 
     #randomly set 500 of these to 0
     num_removed = 0
-    while(num_removed < 500):
+    while(num_removed < 3000):
         row = np.random.uniform(0, 50)
         col = np.random.uniform(0, 100)
         if(M_hat[row, col] != 0):
